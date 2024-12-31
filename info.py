@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/P9c6Y8F/output.png https://i.ibb.co/Jp8rk9t/Motivational-Pic.jpg https://i.ibb.co/Csf2vCq/pusp.jpg https://i.ibb.co/gJTvfbP/pushpa.jpg https://i.ibb.co/NTJcXzM/d5eafac1fa462c577582a9cde11ef16b.jpg https://i.ibb.co/vcXpWzy/ccf7e359bbb34fa7fa98fe0c5ae94af7.jpg https://i.ibb.co/HxyGpdf/9f4fe5a456c2b284dfb0353ecde1207d.jpg https://i.ibb.co/56pBM6p/photo-2024-12-31-21-08-22.jpg https://i.ibb.co/C5L4qxM/KTj2z-Hwv-Ioh-Oqgs-Z-ezgif-com-video-to-gif-converter-2.gif https://i.ibb.co/njfb8MP/GBs-Ofi-WWo-AAT2-Xz-ezgif-com-video-to-gif-converter.gif https://i.ibb.co/JFfnd5c/GBs-K9-ELb-MAAo-R7i-ezgif-com-video-to-gif-converter.gif https://i.ibb.co/SVYhWjc/GBpi1q9a-MAAXJ1w-ezgif-com-video-to-gif-converter.gif')).split()
 
 
 # Admins & Users
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+GcqPan5wIDJlZDA1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MnTLinkss')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+GcqPan5wIDJlZDA1') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/MnTuploaderBot')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
