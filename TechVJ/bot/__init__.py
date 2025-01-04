@@ -8,10 +8,6 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from aiohttp import web
 
-from telegram import Update
-from telegram.ext import Updater, CommandHandler, CallbackContext
-import os
-
 
 class TechVJXBot(Client):
 
@@ -69,43 +65,6 @@ class TechVJXBot(Client):
                 current += 1
       
 TechVJBot = TechVJXBot()
-
-
-
-# Function to handle the /start command
-def start(update: Update, context: CallbackContext):
-    if context.args:
-        # Extract the command (e.g., getfile-The-Rana-Daggubati-Show-2024)
-        command = context.args[0]
-        
-        if command.startswith("getfile-"):
-            file_name = command.replace("getfile-", "")
-            file_path = f"/path/to/your/files/{file_name}.mp4"  # Adjust path to your file directory
-
-            if os.path.exists(file_path):
-                # Send the file to the user
-                update.message.reply_text(f"Sending the file: {file_name}...")
-                update.message.reply_document(open(file_path, 'rb'))
-            else:
-                update.message.reply_text(f"File {file_name} not found.")
-        else:
-            update.message.reply_text(f"Unknown command: {command}")
-    else:
-        update.message.reply_text("Welcome! Please provide a valid command.")
-
-# Main function to set up the bot
-def main():
-    updater = Updater("YOUR_BOT_TOKEN", use_context=True)  # Replace with your bot's API token
-    dispatcher = updater.dispatcher
-
-    dispatcher.add_handler(CommandHandler("start", start))
-
-    updater.start_polling()
-    updater.idle()
-
-# Run the bot
-if __name__ == '__main__':
-    main()
 
 
 multi_clients = {}
